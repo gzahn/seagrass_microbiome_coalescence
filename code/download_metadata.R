@@ -2,6 +2,8 @@
 # Need to rerun after any metadata updates
 
 library(googlesheets4)
+library(dplyr)
+library(tidyr)
 
 # No authentication needed for public sheets
 gs4_deauth()
@@ -14,7 +16,8 @@ urls <- c(
   seqs = "https://docs.google.com/spreadsheets/d/1H90WX5jfnVeueVUSXBB9HPUYTIEFCUKzIyGH2Maqk4s/edit?usp=sharing",
   samps = "https://docs.google.com/spreadsheets/d/1q5PAT23KhXMSpy2DKXyaphIih_a565WYoQa4LuY8deo/edit?usp=sharing",
   greenhouse = "https://docs.google.com/spreadsheets/d/1kTVpIZFeIH0gN4Ma4cyJSEZawCaM4ikM22relD0V9DY/edit?usp=sharing",
-  expunits = "https://docs.google.com/spreadsheets/d/1tYB1SBKKvQOqlxcwDsKKiXmRcYoVFKzEokfi_BamcNQ/edit?usp=sharing"
+  expunits = "https://docs.google.com/spreadsheets/d/1tYB1SBKKvQOqlxcwDsKKiXmRcYoVFKzEokfi_BamcNQ/edit?usp=sharing",
+  pheno = "https://docs.google.com/spreadsheets/d/1uq6Q6mqIEbtFra6W31nDPghnhl3VwjWS5DhAaWdYI14/edit?usp=sharing"
 )
 
 # Import all sheets into a named list of data frames
@@ -29,7 +32,8 @@ filenames <- c(
   seqs = "metadata_phase-1_sequencing.csv",
   samps = "metadata_phase-1_samples.csv",
   greenhouse = "metadata_phase-1_greenhouse.csv",
-  expunits = "metadata_phase-1_experimental_units.csv"
+  expunits = "metadata_phase-1_experimental_units.csv",
+  pheno = "metadata_phase-1_phenotype_observations.csv"
 )
 
 mapply(
@@ -40,3 +44,6 @@ mapply(
   filenames,
   SIMPLIFY = FALSE
 )
+
+# merge all data frames
+left_join()
