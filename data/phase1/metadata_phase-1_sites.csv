@@ -1,0 +1,7 @@
+"site_id","site_name","state","sediment_role","site_selection_rank","site_selection_rationale","collection_date","collection_time","collector","latitude","longitude","collection_depth_cm","habitat_context","vegetation_context","n_pooled_subsamples","total_volume_L","time_chilled","transport_method","arrival_date_vims","arrival_time_vims","storage_temperature_C","storage_duration_days","protocol_deviation","notes"
+"VA_D01",NA,"VA","donor",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,3,1,NA,NA,NA,NA,4,NA,NA,NA
+"VA_D02",NA,"VA","donor",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,3,1,NA,NA,NA,NA,4,NA,NA,NA
+"VA_D03",NA,"VA","donor",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,3,1,NA,NA,NA,NA,4,NA,NA,NA
+"VA_D04",NA,"VA","donor",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,3,1,NA,NA,NA,NA,4,NA,NA,NA
+"VA_R01",NA,"VA","recipient",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,3,2,NA,NA,NA,NA,4,NA,NA,NA
+"NH_R01",NA,"NH","recipient",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,3,2,NA,NA,NA,NA,4,NA,NA,NA
