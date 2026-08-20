@@ -1,0 +1,12 @@
+#!/bin/bash
+
+touch ./workflow_phase1.sh ./workflow_phase2.sh
+mkdir -p ./code/{modeling/{phase1,phase2},analysis{phase1,phase2}}
+mkdir -p ./data/phase1/seqs/{raw,clean}
+mkdir -p ./data/phase2/seqs/{raw,clean}
+mkdir -p ./output/{phase1,phase2}
+mkdir -p ./data/phase1/seqs/{raw,clean}
+mkdir -p ./data/phase2/seqs/{raw,clean}
+mkdir -p ./output/{phase1,phase2}
+mkdir ./methods ./reports
+
